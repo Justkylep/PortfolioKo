@@ -1,9 +1,9 @@
-import Navbar from './comp/Navbar'
-import Profile from './comp/Profile'
-import About from './comp/About'
-import Projects from './comp/Projects'
-import Skills from './comp/Skills'
-import Contact from './comp/Contact'
+import Navbar from './comp/navbar'
+import Profile from './comp/profile'
+import About from './comp/about'
+import Projects from './comp/projects'
+import Skills from './comp/skills'
+import Contact from './comp/contact'
 import './App.css'
 
 function App() {
