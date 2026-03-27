@@ -7,7 +7,7 @@ import Contact from './comp/contact'
 import './App.css'
 
 function App() {
-  return (
+  return (  
     <>
       <Navbar />
       <Profile />
