@@ -7,7 +7,7 @@
 body {
   margin: 0;
   background: linear-gradient(to bottom, #004C35, #087D5A);
-  min-height: 300vh;
+  min-height: 600vh;
 }
 @media (max-width: 768px) {
   body {

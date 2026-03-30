@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.skills-section {
+  text-align: center;
+  margin-top: 100px;
+  padding: 0 100px;
+}
+
+.skillstext {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #DADADA;
+}
+
+.skillst {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #A0CF04;
+  margin: 0 0 40px;
+}
+
+.mgaskills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.box {
+  background: rgba(124, 162, 0, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.skilltitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #A0CF04;
+  margin: 0 0 24px;
+  line-height: 36px;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.skill-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+
+.check {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 0 20px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+}

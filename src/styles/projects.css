@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.projects-section {
+  text-align: center;
+  margin-top: 100px;
+  padding: 0 100px;
+}
+
+.projects-sub {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #DADADA;
+}
+
+.projects-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #A0CF04;
+  margin: 0 0 40px;
+}
+
+.projects-row {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.project-left-card {
+  background: rgba(124, 162, 0, 0.6);
+  border-radius: 20px;
+  padding: 24px;
+  width: 349px;
+  min-height: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin: 0;
+  text-align: center;
+}
+
+.project-left-images {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-img-small {
+  width: 289px;
+  height: 217px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid #DADADA;
+  align-self: center;
+}
+
+.project-right-card {
+  background: rgba(124, 162, 0, 0.6);
+  border-radius: 20px;
+  padding: 24px;
+  width: 539px;
+  text-align: left;
+  margin-top: 55px;
+}
+
+.project-img-vault {
+  width: 100%;
+  height: 276px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 16px;
+}
+
+.project-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin: 0 0 8px;
+}
+
+.project-desc {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #B7B7B7;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 0 20px;
+  }
+
+  .projects-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-left-card {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .project-right-card {
+    width: 100%;
+  }
+
+  .project-img-small {
+    width: 100%;
+    height: 180px;
+  }
+}
