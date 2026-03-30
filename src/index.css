@@ -9,3 +9,8 @@ body {
   background: linear-gradient(to bottom, #004C35, #087D5A);
   min-height: 300vh;
 }
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}

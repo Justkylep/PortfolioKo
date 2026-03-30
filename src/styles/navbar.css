@@ -25,6 +25,7 @@
   color: #A0CF04;
 }
 
+
 .navbar-right {
   display: flex;
   gap: 85px;
@@ -49,4 +50,26 @@
 
 .navbar-right a:hover {
   background-color: #A0CF04;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .nav-title {
+    font-size: 24px;
+  }
+
+  .navbar-right {
+    gap: 8px;
+    padding: 0;
+  }
+
+  .navbar-right a {
+    font-size: 16px;
+    width: 90px;
+    height: 30px;
+  }
 }

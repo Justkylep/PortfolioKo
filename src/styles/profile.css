@@ -11,18 +11,19 @@
   display: flex;
   align-items: center;
   padding: 40px;
+  position: relative;
 }
 
 .text {
   display: flex;
-  flex-direction:   column;
+  flex-direction: column;
   gap: 8px;
+  flex: 1;
 }
 
 .hello {
-    
-  font-family:sans-serif;
-    font-weight: 550;
+  font-family: sans-serif;
+  font-weight: 550;
   font-size: 24px;
   color: #FFFFFF;
   margin-left: 270px;
@@ -44,27 +45,24 @@
   font-weight: 600;
   font-size: 24px;
   color: #A0CF04;
-   margin-left: 160px;
-  margin-bottom: 200px;
+  margin-left: 160px;
 }
-.profile-photo {
 
-position: absolute;
-width: 355px;
-height: 367px;
-left: 880px;
-top: 348px;
-border-radius: 50%;
+.profile-photo {
+  width: 355px;
+  height: 367px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
 }
+
 .links {
   position: absolute;
-  top: 650px;
-  left: 40px;
+  bottom: 20px;
+  left: 120px;
   display: flex;
   flex-direction: column;
   gap: 6px;
-  margin-left: 80px;
-  margin-bottom: 1px;
 }
 
 .labels {
@@ -83,4 +81,38 @@ border-radius: 50%;
 .social-icon {
   width: 30px;
   height: 30px;
+}
+
+@media (max-width: 768px) {
+  .bg {
+    flex-direction: column;
+    height: auto;
+    padding: 24px;
+    align-items: flex-start;
+  }
+
+  .hello {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .name {
+    font-size: 36px;
+    line-height: normal;
+  }
+
+  .role {
+    font-size: 18px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .profile-photo {
+    display: none;
+  }
+
+  .links {
+    position: static;
+    margin-top: 16px;
+  }
 }
