@@ -2,7 +2,7 @@
 
 .skills-section {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 250px;
   padding: 0 100px;
 }
 
@@ -70,17 +70,26 @@
   height: 16px;
   flex-shrink: 0;
 }
+.box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-20px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
 
 @media (max-width: 768px) {
   .skills-section {
     padding: 0 20px;
+    margin-top: 80px;
   }
 
-  .skills-grid {
+  .mgaskills {
     grid-template-columns: 1fr;
   }
 
-  .card-title {
+  .skilltitle {
     font-size: 20px;
   }
 }

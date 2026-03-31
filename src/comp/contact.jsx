@@ -5,23 +5,23 @@ import messPhoto from '../assets/mess.png'
 function Contact() {
   return (
     <div id='contact' className='contact-section'>
-      <p className='contact-sub'>Get In Touch</p>
-      <h2 className='contact-title'>Contact Me</h2>
+      <p className='contactd'>Get In Touch</p>
+      <h2 className='contacttitle'>Contact Me</h2>
 
-      <div className='contact-row'>
+      <div className='contacts'>
 
-        <div className='contact-card'>
+        <div className='cbox'>
           <img src={emailPhoto} alt='email' className='contact-icon' />
           <p className='contact-name'>Jhon Khyle Paduala</p>
           <p className='contact-info'>padualajhonkhyle@gmail.com</p>
           <a href='mailto:padualajhonkhyle@gmail.com' className='contact-link'>Send Message</a>
         </div>
 
-        <div className='contact-card'>
+        <div className='cbox'>
           <img src={messPhoto} alt='messenger' className='contact-icon' />
-          <p className='contact-platform'>Messenger</p>
+          <p className='contactp'>Messenger</p>
           <p className='contact-name'>Jhon Khyle Paduala</p>
-          <a href='https://m.me/' className='contact-link'>Send Message</a>
+         <a href='https://www.facebook.com/Totokyle.paduala.1' target='_blank' rel='noreferrer' className='contact-link'>Send Message</a>
         </div>
 
       </div>

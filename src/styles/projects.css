@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-.projects-section {
+.projects {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 250px;
   padding: 0 100px;
 }
 
-.projects-sub {
+.projectstext {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -21,14 +21,14 @@
   margin: 0 0 40px;
 }
 
-.projects-row {
+.projectsr {
   display: flex;
   gap: 30px;
   align-items: flex-start;
   justify-content: center;
 }
 
-.project-left-card {
+.projectleft {
   background: rgba(124, 162, 0, 0.6);
   border-radius: 20px;
   padding: 24px;
@@ -48,7 +48,7 @@
   text-align: center;
 }
 
-.project-left-images {
+.projectleftpic {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -63,7 +63,7 @@
   align-self: center;
 }
 
-.project-right-card {
+.projectright {
   background: rgba(124, 162, 0, 0.6);
   border-radius: 20px;
   padding: 24px;
@@ -88,13 +88,22 @@
   margin: 0 0 8px;
 }
 
-.project-desc {
+.projectd {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 22px;
   color: #B7B7B7;
   margin: 0;
+}
+.project-img-small,
+.project-img-vault {
+  transition: transform 0.3s ease;
+}
+
+.project-img-small:hover,
+.project-img-vault:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {

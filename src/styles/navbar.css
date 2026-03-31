@@ -7,7 +7,7 @@
   padding: 16px 40px;
 }
 
-.navbar-left {
+.left {
   display: flex;
   align-items: center ;
   gap: 5px;
@@ -26,14 +26,14 @@
 }
 
 
-.navbar-right {
+.right {
   display: flex;
   gap: 85px;
   align-items: center;
   padding: 60px;
 }
 
-.navbar-right a {
+.right a {
   text-decoration: none;
   color: #E5E5E5;
   font-family: 'Poppins';
@@ -48,7 +48,7 @@
   justify-content: center;
 }
 
-.navbar-right a:hover {
+.right a:hover {
   background-color: #A0CF04;
 }
 @media (max-width: 768px) {
@@ -62,12 +62,12 @@
     font-size: 24px;
   }
 
-  .navbar-right {
+  .right {
     gap: 8px;
     padding: 0;
   }
 
-  .navbar-right a {
+  .right a {
     font-size: 16px;
     width: 90px;
     height: 30px;
