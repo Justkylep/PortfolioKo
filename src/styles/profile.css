@@ -89,7 +89,8 @@
     flex-direction: column;
     height: auto;
     padding: 24px;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
 
   .hello {
@@ -100,26 +101,24 @@
   .name {
     font-size: 36px;
     line-height: normal;
+    margin-left: 0;
   }
 
   .role {
     font-size: 18px;
     margin-left: 0;
-    margin-bottom: 0;
   }
 
   .profile-photo {
-  display: block;
-  width: 150px;
-  height: 150px;
-  margin-top: 50px;
-  align-self: center;
-}
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+  }
 
   .links {
     position: static;
     margin-top: 16px;
-    margin-left: 50px;
-    
+    align-items: center;
   }
 }

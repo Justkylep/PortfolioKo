@@ -107,26 +107,32 @@
 }
 
 @media (max-width: 768px) {
-  .projects-section {
+  .projects {
     padding: 0 20px;
+    margin-top: 80px;
   }
 
-  .projects-row {
+  .projectsr {
     flex-direction: column;
     align-items: center;
   }
 
-  .project-left-card {
+  .projectleft {
     width: 100%;
     min-height: auto;
   }
 
-  .project-right-card {
+  .projectright {
     width: 100%;
+    margin-top: 0;
   }
 
   .project-img-small {
     width: 100%;
     height: 180px;
+  }
+
+  .project-img-vault {
+    height: 200px;
   }
 }

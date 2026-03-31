@@ -7,13 +7,16 @@
 body {
   margin: 0;
   background: linear-gradient(to bottom, #004C35, #087D5A);
-  min-height: 600vh;
+  min-height: 100vh;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
+    min-height: 100vh;
   }
-}
-html {
-  scroll-behavior: smooth;
 }
