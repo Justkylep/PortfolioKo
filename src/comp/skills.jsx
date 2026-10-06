@@ -7,7 +7,7 @@ function Skills() {
       <p className='skillstext'>What Skills I Have</p>
       <h2 className='skillst'>My Proficiency</h2>
 
-      <div className='mgaskills'>
+      <div className='mgaskills '>
 
         <div className='box'>
           <h3 className='skilltitle'>Programming & Web Development</h3>
