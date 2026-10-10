@@ -1,101 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-.contact-section {
-  text-align: center;
-  margin-top: 250px;
-  padding: 0 100px;
-  margin-bottom: 100px;
+.contact {
+  background: #1b1709;
+  padding: 64px 0 30px 0;
+  font-family: 'Inter', sans-serif;
 }
 
-.contactd {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: #DADADA;
+.contact-area {
+  position: relative;
+  width: 980px;
+  height: 300px;
+  margin: 0 auto;
 }
 
-.contacttitle {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 32px;
-  color: #A0CF04;
-  margin: 0 0 40px;
-}
-
-.contacts {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-
-.cbox {
-  background: rgba(124, 162, 0, 0.6);
-  border-radius: 20px;
-  padding: 24px;
-  width: 338px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-}
-
-.contact-icon {
-  width: 24px;
-  height: 24px;
-}
-
-.contactp {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #FFFFFF;
+/* ---------- LEFT ---------- */
+.contact-logo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
   margin: 0;
+  font-family: 'Syne', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
 }
 
-.contact-name {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #FFFFFF;
+.contact-text {
+  position: absolute;
+  top: 46px;
+  left: 0px;
+  width: 340px;
   margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #d9cfb4;
 }
 
-.contact-info {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #FFFFFF;
+.contact-pill {
+  position: absolute;
+  top: 126px;
+  left: 0px;
   margin: 0;
-}
-
-.contact-link {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  padding: 8px 14px;
+  border: 1px solid #5c4c2c;
+  border-radius: 8px;
   font-size: 12px;
-  color: #C4FF00;
+  color: #f3ead2;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+/* the small gold dot before the text */
+.contact-pill::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: #d9b866;
+}
+
+.contact-pill:hover {
+  border-color: #d9b866;
+  background: #2e2610;
+}
+
+/* ---------- COLUMNS ---------- */
+.contact-nav {
+  position: absolute;
+  top: 0px;
+  left: 520px;
+  width: 180px;
+}
+
+.contact-profiles {
+  position: absolute;
+  top: 0px;
+  left: 740px;
+  width: 240px;
+}
+
+.contact-title {
+  margin: 0 0 22px 0;
+  font-size: 11px;
+  font-weight: bold;
+  color: #d9b866;
+}
+
+.contact-nav a,
+.contact-profiles a {
+  display: block;
+  margin: 0 0 14px 0;
+  font-size: 14px;
+  color: #d9cfb4;
   text-decoration: none;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+/* hover: link turns white and slides to the right */
+.contact-nav a:hover,
+.contact-profiles a:hover {
+  color: white;
+  padding-left: 8px;
+}
+
+/* icons */
+.contact-profiles img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  vertical-align: middle;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.contact-profiles a:hover img {
+  opacity: 1;
+}
+
+/* ---------- BOTTOM ---------- */
+.contact-line {
+  position: absolute;
+  top: 236px;
+  left: 0px;
+  width: 980px;
+  border-top: 1px solid #3a3220;
+}
+
+.contact-copy {
+  position: absolute;
+  top: 264px;
+  left: 0px;
   margin: 0;
+  font-size: 13px;
+  color: #b8ad90;
 }
 
-.contact-link:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-  .contact-section {
-    padding: 0 20px;
-    margin-top: 80px;
-  }
-
-  .contacts {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cbox {
-    width: 100%;
+/* ---------- PHONES AND TABLETS ---------- */
+@media (max-width: 1040px) {
+  .contact-area {
+    width: 90%;
     height: auto;
   }
+
+  .contact-logo, .contact-text, .contact-pill,
+  .contact-nav, .contact-profiles,
+  .contact-line, .contact-copy {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  .contact-text { width: 100%; margin: 14px 0 20px 0; }
+  .contact-pill { display: inline-block; margin-bottom: 36px; }
+  .contact-nav { width: 100%; margin-bottom: 30px; }
+  .contact-profiles { width: 100%; margin-bottom: 30px; }
+  .contact-line { width: 100%; }
+  .contact-copy { margin-top: 20px; }
 }

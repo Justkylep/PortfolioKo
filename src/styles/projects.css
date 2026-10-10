@@ -1,138 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
 .projects {
-  text-align: center;
-  margin-top: 250px;
-  padding: 0 100px;
+  background: #fbf8f1;
+  padding: 80px 0 100px 0;
+  font-family: 'Inter', sans-serif;
 }
 
-.projectstext {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: #DADADA;
+.projects-area {
+  position: relative;
+  width: 980px;
+  height: 640px;
+  margin: 0 auto;
+}
+
+/* ---------- HEADING ---------- */
+.projects-label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: #7d5f17;
 }
 
 .projects-title {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 32px;
-  color: #A0CF04;
-  margin: 0 0 40px;
-}
-
-.projectsr {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.projectleft {
-  background: rgba(124, 162, 0, 0.6);
-  border-radius: 20px;
-  padding: 24px;
-  width: 349px;
-  min-height: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.project-label {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  color: #FFFFFF;
+  position: absolute;
+  top: 28px;
+  left: 0px;
   margin: 0;
-  text-align: center;
+  font-family: 'Syne', sans-serif;
+  font-size: 44px;
+  font-weight: 800;
+  color: #1b1709;
 }
 
-.projectleftpic {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.projects-title i {
+  color: #a07a28;
 }
 
-.project-img-small {
-  width: 289px;
-  height: 217px;
-  object-fit: cover;
-  border-radius: 15px;
-  border: 2px solid #DADADA;
-  align-self: center;
+/* ---------- TILES (shared look) ---------- */
+.project {
+  position: absolute;
+  left: 0px;
+  width: 980px;
+  height: 150px;
+  background: white;
+  border: 1px solid #e3d8bc;
+  border-radius: 14px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-.projectright {
-  background: rgba(124, 162, 0, 0.6);
-  border-radius: 20px;
-  padding: 24px;
-  width: 539px;
-  text-align: left;
-  margin-top: 55px;
+.project1 { top: 130px; }
+.project2 { top: 300px; }
+.project3 { top: 470px; }
+
+/* hover effect on the whole tile */
+.project:hover {
+  transform: translateY(-5px);
+  border-color: #a07a28;
+  box-shadow: 0 14px 30px rgba(60, 45, 10, 0.15);
 }
 
-.project-img-vault {
+/* ---------- PHOTO (left) ---------- */
+.project-photo {
+  position: absolute;
+  top: 19px;
+  left: 20px;
+  width: 250px;
+  height: 110px;
+  background: #f3ead2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-photo img {
+  display: block;
   width: 100%;
-  height: 276px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 15px;
-  margin-bottom: 16px;
+  transition: transform 0.4s ease;
 }
 
+.project:hover .project-photo img {
+  transform: scale(1.08);
+}
+
+/* ---------- TEXT (middle) ---------- */
 .project-name {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  color: #FFFFFF;
-  margin: 0 0 8px;
-}
-
-.projectd {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
-  color: #B7B7B7;
+  position: absolute;
+  top: 22px;
+  left: 292px;
   margin: 0;
-}
-.project-img-small,
-.project-img-vault {
-  transition: transform 0.3s ease;
-}
-
-.project-img-small:hover,
-.project-img-vault:hover {
-  transform: scale(1.05);
+  font-size: 20px;
+  color: #1b1709;
+  transition: color 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .projects {
-    padding: 0 20px;
-    margin-top: 80px;
+.project:hover .project-name {
+  color: #a07a28;
+}
+
+.project-text {
+  position: absolute;
+  top: 56px;
+  left: 292px;
+  width: 440px;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #5c5238;
+}
+
+/* ---------- BUTTON (right) ---------- */
+.project-btn {
+  position: absolute;
+  top: 54px;
+  right: 24px;
+  padding: 11px 20px;
+  background: #1b1709;
+  color: white;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.project-btn:hover {
+  background: #a07a28;
+  transform: translateY(-2px);
+}
+
+/* ---------- PHONES AND TABLETS ---------- */
+@media (max-width: 1040px) {
+  .projects-area {
+    width: 90%;
+    height: auto;
   }
 
-  .projectsr {
-    flex-direction: column;
-    align-items: center;
+  .projects-title,
+  .project, .project-photo, .project-name, .project-text, .project-btn {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
   }
 
-  .projectleft {
+  .projects-title { font-size: 34px; margin: 8px 0 24px 0; }
+
+  .project {
     width: 100%;
-    min-height: auto;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 20px;
   }
 
-  .projectright {
-    width: 100%;
-    margin-top: 0;
-  }
-
-  .project-img-small {
-    width: 100%;
-    height: 180px;
-  }
-
-  .project-img-vault {
-    height: 200px;
-  }
+  .project-photo { width: 100%; height: 160px; }
+  .project-name { margin: 16px 0 8px 0; }
+  .project-text { width: 100%; margin-bottom: 16px; }
+  .project-btn { display: inline-block; }
 }

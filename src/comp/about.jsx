@@ -1,27 +1,52 @@
 import '../styles/about.css'
-import aboutPhoto from '../assets/portfolioaboutme.jpg'
-function About() {
-  return <div> <div className='about'>
-    <div id='about'></div>
-      <p className='gtk'>Get To Know</p>
-      <h2 className='about-title'>ABOUT ME</h2>
-    </div>
 
+export default function About() {
+  return (
+    <section id="about" className="about">
+      <div className="about-area">
 
-    <div className='sulat'>
-      <img src={aboutPhoto} alt='about me' className='about-pic' />
-  <div className='box'>
-    <h3 className='who-title'>Who i Am</h3>
-    <p className='who-text'>
-      I believe that the best digital experiences happen when creativity and technology work together. Over the past two years, I have grown my skills through various projects that helped me understand both the technical side and the creative side of building digital solutions. For me, design is more than just how something looks—it's about making sure it is simple, useful, and easy to use.
-      <br /><br />
-      I enjoy taking a small idea and turning it into something clear and engaging. I pay close attention to the small details because I want the things I build to feel natural and approachable for everyone who uses them.
-      <br /><br />
-      I am always learning and looking for new ways to make digital work that feels thoughtful and serves a real purpose.
-    </p>
-    
-  </div>
+        
+        <h2 className="about-title">My Focus</h2>
+
+        <p className="about-text">
+          I build <i>responsive websites</i> and set up <i>reliable networks</i>,
+          and I'm looking for a team to learn from.
+        </p>
+
+        <p className="about-para1">
+          I've built a solid foundation in web development (HTML, CSS, JavaScript) 
+          and database management, configured network setups in Cisco Packet Tracer,
+           and applied automation concepts using custom scripts and API integrations.
+        </p>
+
+        <p className="about-para2">
+          That mix shaped how I approach software: not just building pages,
+          but understanding how they connect, where the data lives, and how to
+          keep everything running reliably. I care about simple, dependable
+          systems over fragile complexity.
+        </p>
+
+        <div className="box1">
+          <p className="small">NEXT GOAL</p>
+          <p className="big">Land an Internship</p>
+        </div>
+
+        <div className="box2">
+          <p className="small">LEARNING</p>
+          <p className="big">Python &amp; APIs</p>
+        </div>
+
+        <div className="box3">
+          <p className="small">WORK SETUP</p>
+          <p className="big">On-site or Remote</p>
+        </div>
+
+        <div className="box4 vibrate-1">
+  <p className="small">STATUS</p>
+  <p className="big">Available for Work</p>
 </div>
-</div>
+
+      </div>
+    </section>
+  )
 }
-export default About

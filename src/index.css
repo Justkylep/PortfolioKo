@@ -1,21 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  background: linear-gradient(to bottom, #004C35, #087D5A);
-  min-height: 100vh;
+  background: #fbf8f1;
+  font-family: 'Inter', sans-serif;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-    min-height: 100vh;
-  }}

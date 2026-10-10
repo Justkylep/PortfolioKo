@@ -1,20 +1,17 @@
 import '../styles/navbar.css'
-import logophoto from '../assets/klogo.png'
 
-function Navbar() {
+export default function Navbar() {
   return (
-    <nav className='navbar'>
-      <div className='left'>
-        <img src={logophoto} alt='logo' className='logo' />
-        <span className='nav-title'>Portfolio</span>
+    <header className="nav">
+      <a href="#home" className="nav-logo">khyle.</a>
+
+      <div className="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
-      <div className='right'>
-        <a href='#about'>About</a>
-        <a href='#skills'>Skills</a>
-        <a href='#projects'>Projects</a>
-      </div>
-    </nav>
+    </header>
   )
 }
-
-export default Navbar

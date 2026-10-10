@@ -1,32 +1,56 @@
 import '../styles/contact.css'
-import emailPhoto from '../assets/emailphoto.png'
-import messPhoto from '../assets/mess.png'
 
-function Contact() {
+export default function Contact() {
   return (
-    <div id='contact' className='contact-section'>
-      <p className='contactd'>Get In Touch</p>
-      <h2 className='contacttitle'>Contact Me</h2>
+    <section id="contact" className="contact">
+      <div className="contact-area">
 
-      <div className='contacts'>
+        {/* ---------- LEFT ---------- */}
+        <p className="contact-logo">khyle.</p>
+        <p className="contact-text">
+          3rd-year BSIT student building responsive websites and reliable networks.
+        </p>
+        <p className="contact-pill">Iloilo, Philippines (UTC+8) · On-site or remote</p>
 
-        <div className='cbox'>
-          <img src={emailPhoto} alt='email' className='contact-icon' />
-          <p className='contact-name'>Jhon Khyle Paduala</p>
-          <p className='contact-info'>padualajhonkhyle@gmail.com</p>
-          <a href='mailto:padualajhonkhyle@gmail.com' className='contact-link'>Send Message</a>
+        {/* ---------- NAVIGATION ---------- */}
+        <div className="contact-nav">
+          <p className="contact-title">NAVIGATION</p>
+          <a href="#home">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
 
-        <div className='cbox'>
-          <img src={messPhoto} alt='messenger' className='contact-icon' />
-          <p className='contactp'>Messenger</p>
-          <p className='contact-name'>Jhon Khyle Paduala</p>
-         <a href='https://www.facebook.com/Totokyle.paduala.1' target='_blank' rel='noreferrer' className='contact-link'>Send Message</a>
+        {/* ---------- PROFILES ---------- */}
+        <div className="contact-profiles">
+          <p className="contact-title">PROFILES &amp; REACH</p>
+
+          {/* ADD YOUR GITHUB LINK: change the # inside href */}
+          <a href="#" target="_blank" rel="noreferrer">
+            <img src="/icons/footer-github.svg" alt="" />GitHub
+          </a>
+
+          {/* ADD YOUR LINKEDIN LINK: change the # inside href */}
+          <a href="#" target="_blank" rel="noreferrer">
+            <img src="/icons/footer-linkedin.svg" alt="" />LinkedIn
+          </a>
+
+          {/* ADD YOUR EMAIL: change the text after mailto: */}
+          <a href="mailto:youremail@gmail.com">
+            <img src="/icons/footer-mail.svg" alt="" />Direct Email
+          </a>
+
+          {/* ADD YOUR RESUME: put resume.pdf inside the public folder */}
+          <a href="/resume.pdf" download>
+            <img src="/icons/footer-download.svg" alt="" />Download Resume
+          </a>
         </div>
+
+        {/* ---------- BOTTOM ---------- */}
+        <div className="contact-line"></div>
+        <p className="contact-copy">© 2026 Jhon Khyle Paduala</p>
 
       </div>
-    </div>
+    </section>
   )
 }
-
-export default Contact
