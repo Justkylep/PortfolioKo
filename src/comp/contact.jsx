@@ -6,7 +6,13 @@ export default function Contact() {
 
       <div className="mail-box">
         <p className="mail-text">Have a project or question? The best way to reach me is by email.</p>
-        <a className="mail-btn" href="mailto:youremail@gmail.com">Email me</a>
+        <a 
+  className="mail-btn" 
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=whileitlastt@gmail.com" 
+  target="_blank"
+>
+  Email me
+</a>
       </div>
 
       <div className="contact-area">
@@ -25,8 +31,8 @@ export default function Contact() {
 
         <div className="contact-profiles">
           <p className="contact-title">PROFILES &amp; REACH</p>
-          <a href="#"><img src="/icons/footer-github.svg" alt="" />GitHub</a>
-          <a href="#"><img src="/icons/footer-linkedin.svg" alt="" />LinkedIn</a>
+          <a href="https://github.com/Justkylep" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.facebook.com/Totokyle.paduala.1" target="_blank" rel="noreferrer">Facebook</a>
         </div>
 
         <div className="contact-line"></div>
