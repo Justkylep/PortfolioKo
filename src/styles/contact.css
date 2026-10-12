@@ -1,101 +1,170 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+.contact {
+  background: #1b1709;
+  padding: 64px 0px 30px 0px;
+  font-family: 'Inter', sans-serif;
+}
 
-.contact-section {
+/* email */
+.mail-box {
   text-align: center;
-  margin-top: 250px;
-  padding: 0 100px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
-.contactd {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: #DADADA;
+.mail-text {
+  margin: 0px;
+  font-size: 18px;
+  color: #d9cfb4;
 }
 
-.contacttitle {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 32px;
-  color: #A0CF04;
-  margin: 0 0 40px;
-}
-
-.contacts {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-
-.cbox {
-  background: rgba(124, 162, 0, 0.6);
-  border-radius: 20px;
-  padding: 24px;
-  width: 338px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-}
-
-.contact-icon {
-  width: 24px;
-  height: 24px;
-}
-
-.contactp {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #FFFFFF;
-  margin: 0;
-}
-
-.contact-name {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #FFFFFF;
-  margin: 0;
-}
-
-.contact-info {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #FFFFFF;
-  margin: 0;
-}
-
-.contact-link {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  color: #C4FF00;
+.mail-btn {
+  display: inline-block;
+  margin-top: 26px;
+  padding: 14px 32px;
+  background: #d9b866;
+  color: #1b1709;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
   text-decoration: none;
-  margin: 0;
 }
 
-.contact-link:hover {
-  text-decoration: underline;
+.mail-btn:hover {
+  background: #e6c878;
 }
 
-@media (max-width: 768px) {
-  .contact-section {
-    padding: 0 20px;
-    margin-top: 80px;
+/* container */
+.contact-area {
+  width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* left */
+.contact-left {
+  float: left;
+  width: 520px;
+}
+
+.contact-logo {
+  margin: 0px;
+  font-family: 'Syne', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+}
+
+.contact-text {
+  width: 340px;
+  margin: 16px 0px 0px 0px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #d9cfb4;
+}
+
+.contact-pill {
+  display: inline-block;
+  margin: 30px 0px 0px 0px;
+  padding: 10px 14px;
+  border: 1px solid #5c4c2c;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #f3ead2;
+}
+
+.contact-pill:hover {
+  border-color: #d9b866;
+  background: #2e2610;
+}
+
+/* columns */
+.contact-nav {
+  float: left;
+  width: 220px;
+}
+
+.contact-profiles {
+  float: left;
+  width: 240px;
+}
+
+.contact-left,
+.contact-nav,
+.contact-profiles {
+  margin-bottom: 50px;
+}
+
+.contact-title {
+  margin: 0px 0px 22px 0px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #d9b866;
+}
+
+.contact-nav a,
+.contact-profiles a {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #d9cfb4;
+  text-decoration: none;
+}
+
+.contact-nav a:hover,
+.contact-profiles a:hover {
+  color: white;
+  padding-left: 8px;
+}
+
+.contact-profiles img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* line */
+.contact-line {
+  clear: both;
+  border-top: 1px solid #3a3220;
+}
+
+.contact-copy {
+  margin: 24px 0px 0px 0px;
+  font-size: 13px;
+  color: #b8ad90;
+}
+
+
+/* MOBILE */
+@media (max-width: 1040px) {
+
+  .mail-box {
+    padding: 0px 20px;
   }
 
-  .contacts {
-    flex-direction: column;
-    align-items: center;
+  .contact-area {
+    width: 300px;
   }
 
-  .cbox {
-    width: 100%;
+  .contact-left {
+    float: none;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+
+  .contact-text {
+    width: 300px;
+  }
+
+  .contact-nav {
+    width: 110px;
     height: auto;
+    margin-bottom: 30px;
+  }
+
+  .contact-profiles {
+    width: 190px;
+    height: auto;
+    margin-bottom: 30px;
   }
 }

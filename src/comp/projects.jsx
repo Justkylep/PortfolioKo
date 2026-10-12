@@ -1,33 +1,51 @@
 import '../styles/projects.css'
-import lemon from '../assets/lemon.png'
-import perfume from '../assets/perfume.png'
-import vault from '../assets/vault.png'
 
-function Projects() {
+export default function Projects() {
   return (
-    <div id='projects' className='projects'>
-      <p className='projectstext'>My Recent Work</p>
-      <h2 className='projects-title'>Portfolio</h2>
+    <section id="projects" className="projects">
+      <div className="projects-area">
 
-      <div className='projectsr'>
+        <h2 className="projects-title">Builds</h2>
+        <p className="projects-text">Projects, apps, and prototypes.</p>
 
-        <div className='projectleft'>
-          <p className='project-label'>UI Design</p>
-          <div className='projectleftpic'>
-            <img src={lemon} alt='lemon' className='project-img-small' />
-            <img src={perfume} alt='perfume' className='project-img-small' />
+        <div className="project project1">
+          <div className="project-photo">
+            <img src="/projects/trashtalk.jpg" alt="TrashTalk" />
           </div>
+          <h3 className="project-name">TrashTalk</h3>
+          <p className="project-desc">
+            A prototype app connecting users and janitorial staff to track,
+            report, and maintain clean shared spaces.
+          </p>
+          <a className="project-btn" href="#">Check It Out</a>
         </div>
 
-        <div className='projectright'>
-          <img src={vault} alt='vault' className='project-img-vault' />
-          <h3 className='project-name'>StudyVault</h3>
-          <p className='projectd'>A full product prototype, where user can manage their study notes. For them to study effectively.</p>
+        <div className="project project2">
+          <div className="project-photo">
+            <img src="/projects/buildit.jpg" alt="BuildIT" />
+          </div>
+          <h3 className="project-name">BuildIT</h3>
+          <p className="project-desc">
+            A 2D interactive educational game where users assemble a computer
+            system from scratch to learn hardware components.
+          </p>
+          <a className="project-btn" href="#">Check It Out</a>
+        </div>
+
+        <div className="project project3">
+          <div className="project-photo">
+            <img src="/projects/netlab.jpg" alt="NetLab" />
+          </div>
+          <h3 className="project-name">NetLab</h3>
+          <p className="project-desc">
+            A complete enterprise networking lab implementing VLANs, VoIP,
+            wireless clients, and full-mesh OSPF routing for end-to-end device
+            reachability.
+          </p>
+          <a className="project-btn" href="#">Check It Out</a>
         </div>
 
       </div>
-    </div>
+    </section>
   )
 }
-
-export default Projects

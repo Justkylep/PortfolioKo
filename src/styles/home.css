@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Syne:wght@600;800&display=swap');
+  
+.home {
+  background: black;
+  height: 760px;
+  padding-top: 140px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* container */
+.home-area {
+  position: relative;
+  width: 1100px;
+  height: 560px;
+  margin: 0 auto;
+}
+
+.home-title1 {
+  position: relative;
+  left: 40px; 
+  margin: 0px;
+  height: 70px;
+  line-height: 70px;
+  font-family: 'Syne', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  color: #c9a45c;
+}
+
+.home-title2 {
+  position: relative;
+   left: 40px;
+  margin: 0px;
+  height: 70px;
+  line-height: 70px;
+  font-family: 'Syne', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  color: white;
+}
+
+/* name */
+.home-name {
+  position: relative;
+  bottom: 10px;
+  left: 40px;
+  margin: 40px 0px 0px 0px;
+  height: 30px;
+  line-height: 30px;
+  font-family: 'Syne', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #c9a45c;
+}
+
+/* text */
+.home-desc {
+  position: relative;
+  bottom: 25px;
+  left: 40px;
+  margin: 14px 0px 0px 0px;
+  width: 500px;
+  height: 60px;
+  line-height: 30px;
+  font-size: 18px;
+  color: #bbbbbb;
+}
+
+/* buttons */
+.home-btns {
+  position: relative;
+  left: 40px;
+  margin-bottom: 25px;
+  height: 50px;
+}
+
+.home-btn1 {
+  display: inline-block;
+  width: 140px;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 14px;
+  text-align: center;
+  background: #f1f1f1;
+  color: black;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.home-btn2 {
+  display: inline-block;
+  width: 98px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  border: 1px solid #c9a45c;
+  color: white;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.home-btn1:hover {
+  opacity: 0.85;
+}
+
+.home-btn2:hover {
+  background: #2a2314;
+}
+
+/* photo */
+.home-photo {
+  position: relative;
+  top: -364px;
+  left: 770px;
+}
+
+.home-photo img {
+  display: block;
+  width: 290px;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+
+/* MOBILE */
+@media (max-width: 1140px) {
+
+  .home {
+    height: auto;
+    padding: 110px 0px 60px 0px;
+  }
+
+  .home-area {
+    width: 300px;
+    height: auto;
+  }
+
+  .home-title1 {
+    left: 0px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 28px;
+    white-space: nowrap;
+  }
+
+  .home-title2 {
+    left: 0px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 28px;
+    white-space: nowrap;
+  }
+
+  .home-name {
+    bottom: 0px;
+    left: 0px;
+    margin-top: 24px;
+    font-size: 20px;
+  }
+
+  .home-desc {
+    bottom: 0px;
+    left: 0px;
+    margin-top: 10px;
+    width: 300px;
+    height: 78px;
+    line-height: 26px;
+    font-size: 16px;
+  }
+
+  .home-btns {
+    left: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .home-photo {
+    top: 0px;
+    left: 20px;
+    margin-top: 40px;
+  }
+
+  .home-photo img {
+    width: 260px;
+    height: 330px;
+  }
+}
