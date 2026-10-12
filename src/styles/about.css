@@ -17,8 +17,8 @@
   top: 28px;
   left: 0px;
   margin: 0;
-  font-family: 'Syne', sans-serif;   /* new */
-  font-weight: 800;                  /* new */
+  font-family: 'Syne', sans-serif;  
+  font-weight: 800;                 
   font-size: 48px;
   color: #1b1709;
 }
@@ -27,7 +27,7 @@
   color: #a07a28;
 }
 
-/* ---------- BIG STATEMENT ---------- */
+
 .about-text {
   position: absolute;
   top: 110px;
@@ -43,7 +43,7 @@
   color: #a07a28;
 }
 
-/* ---------- TWO PARAGRAPHS ---------- */
+
 .about-para1 {
   position: absolute;
   top: 215px;
@@ -66,16 +66,16 @@
   color: #5c5238;
 }
 
-/* ---------- BOXES ---------- */
+
 .box1, .box2, .box3, .box4 {
   position: absolute;
   top: 410px;
   width: 230px;
-  height: 80px;                /* was 100px */
+  height: 80px;             
   background: white;
   border: 1px solid #e3d8bc;
   border-radius: 12px;
-  padding: 20px 18px;          /* was 16px 18px */
+  padding: 20px 18px;          
   box-sizing: border-box;
 }
 

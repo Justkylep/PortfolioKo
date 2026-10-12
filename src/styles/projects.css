@@ -11,7 +11,7 @@
   margin: 0 auto;
 }
 
-/* title */
+
 .projects-title {
   position: relative;
   margin: 0px;
@@ -23,7 +23,7 @@
   color: #1b1709;
 }
 
-/* subtitle */
+
 .projects-text {
   position: relative;
   margin: 0px 0px 40px 0px;
@@ -32,7 +32,7 @@
   color: #3a3220;
 }
 
-/* tile */
+
 .project {
   position: relative;
   width: 980px;
@@ -45,7 +45,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-/* hover */
+
 .project:hover {
   transform: translateY(-5px);
   border-color: #a07a28;
@@ -72,12 +72,12 @@
   transition: transform 0.4s ease;
 }
 
-/* zoom */
+
 .project:hover .project-photo img {
   transform: scale(1.08);
 }
 
-/* name */
+
 .project-name {
   position: relative;
   top: -88px;
@@ -93,7 +93,7 @@
   color: #a07a28;
 }
 
-/* description */
+
 .project-desc {
   position: relative;
   top: -78px;
@@ -106,7 +106,7 @@
   color: #5c5238;
 }
 
-/* button */
+
 .project-btn {
   position: relative;
   display: block;
