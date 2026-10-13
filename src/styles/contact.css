@@ -1,44 +1,135 @@
 .contact {
-  background: #1b1709;
-  padding: 64px 0px 30px 0px;
   font-family: 'Inter', sans-serif;
 }
 
-/* email */
-.mail-box {
-  text-align: center;
-  margin-bottom: 60px;
+/* TOP (form) */
+.contact-top {
+  background: #fbf8f1;
+  padding: 80px 0px 90px 0px;
 }
 
-.mail-text {
-  margin: 0px;
-  font-size: 18px;
-  color: #d9cfb4;
-}
-
-.mail-btn {
-  display: inline-block;
-  margin-top: 26px;
-  padding: 14px 32px;
-  background: #d9b866;
-  color: #1b1709;
-  border-radius: 30px;
-  font-size: 15px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.mail-btn:hover {
-  background: #e6c878;
-}
-
-/* container */
-.contact-area {
+.form-area {
   width: 980px;
   margin: 0 auto;
   overflow: hidden;
 }
 
+.form-left {
+  float: left;
+  width: 480px;
+  margin-top: 90px;
+}
+
+.form-label {
+  margin: 0px 0px 8px 0px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #7d5f17;
+}
+
+.form-title {
+  margin: 0px 0px 14px 0px;
+  width: 440px;
+  font-family: 'Syne', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 44px;
+  color: #1b1709;
+}
+
+.form-title i {
+  color: #a07a28;
+}
+
+.form-text {
+  margin: 0px;
+  width: 420px;
+  font-size: 18px;
+  line-height: 29px;
+  color: #3a3220;
+}
+
+/* card */
+.form-card {
+  float: left;
+  width: 460px;
+  padding: 32px;
+  box-sizing: border-box;
+  background: #1b1709;
+  border-radius: 24px;
+}
+
+.form-heading {
+  margin: 0px 0px 22px 0px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+
+.form-input,
+.form-message {
+  display: block;
+  width: 396px;
+  margin-bottom: 14px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  background: #2e2610;
+  border: 1px solid #3a3220;
+  border-radius: 24px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #f3ead2;
+}
+
+.form-input {
+  height: 48px;
+}
+
+.form-message {
+  height: 110px;
+  padding: 14px 20px;
+  resize: none;
+}
+
+.form-input::placeholder,
+.form-message::placeholder {
+  color: #9a8e70;
+}
+
+.form-input:focus,
+.form-message:focus {
+  outline: 2px solid #d9b866;
+}
+
+.form-btn {
+  display: block;
+  margin: 6px auto 0px auto;
+  padding: 13px 30px;
+  background: #d9b866;
+  border: 0px;
+  border-radius: 24px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1b1709;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background: #e6c878;
+}
+
+/* BOTTOM (footer) */
+.contact-bottom {
+  background: #1b1709;
+  padding: 64px 0px 30px 0px;
+}
+
+.contact-area {
+  width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
 .contact-left {
   float: left;
@@ -61,22 +152,6 @@
   color: #d9cfb4;
 }
 
-.contact-pill {
-  display: inline-block;
-  margin: 30px 0px 0px 0px;
-  padding: 10px 14px;
-  border: 1px solid #5c4c2c;
-  border-radius: 8px;
-  font-size: 12px;
-  color: #f3ead2;
-}
-
-.contact-pill:hover {
-  border-color: #d9b866;
-  background: #2e2610;
-}
-
-/* columns */
 .contact-nav {
   float: left;
   width: 220px;
@@ -102,7 +177,7 @@
 
 .contact-nav a,
 .contact-profiles a {
-  display: block;
+  display:block;
   margin-bottom: 14px;
   font-size: 14px;
   color: #d9cfb4;
@@ -115,19 +190,10 @@
   padding-left: 8px;
 }
 
-.contact-profiles img {
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-/* line */
 .contact-line {
-  clear: both;
+  clear:both;
   border-top: 1px solid #3a3220;
 }
-
 .contact-copy {
   margin: 24px 0px 0px 0px;
   font-size: 13px;
@@ -138,8 +204,37 @@
 /* MOBILE */
 @media (max-width: 1040px) {
 
-  .mail-box {
-    padding: 0px 20px;
+  .form-area {
+    width: 300px;
+  }
+
+  .form-left {
+    float: none;
+    width: 300px;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .form-title {
+    width: 300px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .form-text {
+    width: 300px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .form-card {
+    float: none;
+    width: 300px;
+    padding: 24px;
+  }
+
+  .form-input,
+  .form-message {
+    width: 250px;
   }
 
   .contact-area {
@@ -158,13 +253,9 @@
 
   .contact-nav {
     width: 110px;
-    height: auto;
-    margin-bottom: 30px;
   }
 
   .contact-profiles {
     width: 190px;
-    height: auto;
-    margin-bottom: 30px;
   }
 }

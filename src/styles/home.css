@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Syne:wght@600;800&display=swap');
-  
 .home {
   background: black;
   height: 760px;
@@ -63,7 +62,7 @@
   width: 500px;
   height: 60px;
   line-height: 30px;
-  font-size: 18px;
+  font-size: 15px;
   color: #bbbbbb;
 }
 
@@ -127,6 +126,11 @@
   height: 370px;
   object-fit: cover;
   border-radius: 20px;
+}
+.home-title1, .home-title2, .home-name, .home-desc, .home-btns {
+  position: relative;
+  top: 20px;
+ 
 }
 
 
@@ -192,4 +196,5 @@
     width: 260px;
     height: 330px;
   }
+ 
 }

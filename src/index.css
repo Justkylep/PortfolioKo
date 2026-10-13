@@ -8,3 +8,22 @@ html, body {
   margin: 0;
   overflow-x: hidden;
 }
+.fade {
+  opacity: 0;
+}
+
+.fade.show {
+  opacity: 1;
+  animation: fade-up 0.8s ease backwards;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

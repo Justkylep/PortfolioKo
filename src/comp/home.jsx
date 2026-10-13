@@ -8,6 +8,7 @@ export default function Home() {
     <section id="home" className="home">
       <div className="home-area">
 
+<div className="rene">
         <h1 className="home-title1">Web Dev</h1>
         <h1 className="home-title2">& Networking</h1>
 
@@ -24,7 +25,7 @@ export default function Home() {
         <div className="home-photo">
          <img src={profile} alt="Khyle" />
         </div>
-
+</div>
       </div>
     </section>
   )
